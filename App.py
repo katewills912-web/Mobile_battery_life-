@@ -10,9 +10,9 @@ st.title("📱 Mobile Battery Life Predictor")
 
 # User Inputs
 user_name = st.text_input("Enter your name")
-battery_capacity = st.number_input("Battery Capacity (mAh)", 2800, 6000, 4000)
-screen_size = st.number_input("Screen Size (inches)", 4.5, 7.0, 6.0)
-daily_usage = st.number_input("Daily Usage (hours)", 1, 12, 5)
+battery_capacity = st.number_input("Battery Capacity (mAh)")
+screen_size = st.number_input("Screen Size (inches)")
+daily_usage = st.number_input("Daily Usage (hours)")
 
 if st.button("Predict Battery Life"):
     input_data = np.array([[battery_capacity, screen_size, daily_usage]])
